@@ -10,7 +10,7 @@ void sub(stack_t **sta, unsigned int line_num)
 {
 	int minus;
 
-	if (!sta || !(*sta) || (*sta)->next)
+	if (!sta || !(*sta) || !(*sta)->next)
 	{
 		fprintf(stderr, "L%d: can't sub, stack too short\n", line_num);
 		exit(EXIT_FAILURE);
