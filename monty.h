@@ -55,7 +55,7 @@ typedef struct instruction_s
 	{"rotl", rotl}, \
 	{"nop", nop}, \
 	{"pstr", pstr}, \
-	{"div", div}, \
+	{"div", divi}, \
 	{"add", add}, \
 	{"sub", sub}, \
 	{"mul", mul}, \
@@ -64,6 +64,11 @@ typedef struct instruction_s
 	{NULL, NULL} \
 }
 
+/**
+ * struct argueme - opcode arguments
+ * @trend: opcode mode
+ * @arg: string argument
+ */
 typedef struct argueme
 {
 	int trend;
@@ -85,5 +90,14 @@ void pint(stack_t **sta, unsigned int line_num);
 void pop(stack_t **sta, unsigned int line_num);
 void swap(stack_t **sta, unsigned int line_num);
 void add(stack_t **sta, unsigned int line_num);
+void nop(stack_t **sta, unsigned int line_num);
+void sub(stack_t **sta, unsigned int line_num);
+void divi(stack_t **sta, unsigned int line_num);
+void mul(stack_t **sta, unsigned int line_num);
+void mod(stack_t **sta, unsigned int line_num);
+void pchar(stack_t **sta, unsigned int line_num);
+void pstr(stack_t **sta, unsigned int line_num);
+void rotl(stack_t **sta, unsigned int line_num);
+void rotr(stack_t **sta, unsigned int line_num);
 
 #endif
