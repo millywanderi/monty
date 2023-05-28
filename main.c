@@ -35,6 +35,12 @@ int main(int argc, char **argv)
 			line_num++;
 			continue;
 		}
+		str = strtok(buf, DELIM);
+		if (!str || *str == '#')
+		{
+			line_num++;
+			continue;
+		}
 		args.arg = strtok(NULL, DELIM);
 		opc(&sta, str, line_num);
 		line_num++;
