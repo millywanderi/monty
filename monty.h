@@ -82,5 +82,8 @@ int dig(char *string);
 stack_t *enq(stack_t **sta, const int m);
 stack_t *plus_node(stack_t **sta, const int n);
 void pint(stack_t **sta, unsigned int line_num);
+void pop(stack_t **sta, unsigned int line_num);
+void swap(stack_t **sta, unsigned int line_num);
+void add(stack_t **sta, unsigned int line_num);
 
 #endif
