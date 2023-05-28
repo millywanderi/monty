@@ -8,9 +8,9 @@
  */
 void rotr(stack_t **sta, unsigned int line_num)
 {
-	(void) line_num;
 	stack_t *up;
 	stack_t *dow;
+	(void) line_num;
 
 	if (!sta || !*sta || !(*sta)->next)
 	{

@@ -8,8 +8,10 @@
  */
 void pstr(stack_t **sta, unsigned int line_num)
 {
+	stack_t *temporary;
 	(void) line_num;
-	stack_t *temporary = *sta;
+
+	temporary = *sta;
 
 	while (temporary != NULL)
 	{
