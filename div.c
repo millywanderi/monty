@@ -10,7 +10,7 @@ void divi(stack_t **sta, unsigned int line_num)
 {
 	int m;
 
-	if (sta == NULL || *sta == NULL || (*sta)->next)
+	if (sta == NULL || *sta == NULL || (*sta)->next == NULL)
 	{
 		fprintf(stderr, "L%d: can't div, stack too short\n", line_num);
 		exit(EXIT_FAILURE);
